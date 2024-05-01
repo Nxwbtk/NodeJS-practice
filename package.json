@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api.js",
-    "dev": "nodemon --env-file=.env api.js"
+    "start": "node express-server.js",
+    "dev": "nodemon --env-file=.env express-server.js"
   },
   "author": "nxwbtk",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.1.0"
   },
-  "type": "module"
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
